@@ -1,0 +1,169 @@
+/* 
+	Theme Name: 	Web Ninja HQ
+	Theme URL: 		https://webninjahq.com/
+	Description: 	A Divi Child Theme
+	Author: 		Nimitz Batioco
+	Author URI: 	https://www.wpnimitz.com
+	Template: 		Divi
+	Version: 		1.0.1	
+*/
+
+header .container {
+    width: 100%;
+    padding: 0 30px;
+	box-sizing: border-box;
+}
+
+
+.et_pb_toggle_open {
+    padding: 0 !important;
+}
+
+.et_pb_toggle_open .et_pb_toggle_content {
+    padding: 20px;
+}
+
+.et_pb_toggle_open h5.et_pb_toggle_title {
+    background: #24a0de;
+    padding: 20px;
+    color: #fff !important;
+}
+
+.et_pb_toggle_open .et_pb_toggle_title:before {
+    content: "\e04f";
+    margin-right: 20px;
+    color: #fff;
+}
+
+.et-pb-controllers a.et-pb-active-control:before {
+    -webkit-animation: fadein 1s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 1s;
+    /* Internet Explorer */
+    -o-animation: fadein 1s;
+    /* Opera < 12.1 */
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Firefox < 16 */
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Safari, Chrome and Opera > 12.1 */
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Opera < 12.1 */
+
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .et_pb_posts .inner {
+        width: 49%;
+    }
+}	
+
+
+.et-cart-info { display:none; }
+
+/** Homepage Edits **/
+.target-bizness > div {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.target-bizness .et_pb_blurb {
+    min-width: 200px;
+    max-width: 400px;
+    flex-basis: auto;
+    flex-grow: 1;
+    margin: 15px !important;
+}
+
+
+.target-bizness .et_pb_blurb:hover h4.et_pb_module_header {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    background: #fff;
+    z-index: 2;
+    position: relative;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+}
+
+
+
+
+
+.summary-gs .item {
+    padding-bottom: 50px;
+}
+
+
+.summary-gs h4 {
+    font-weight: 700;
+}
+
+
+@media screen and (min-width: 768px) {
+    /** CENTERING THINGS **/
+    .vertical-center, .vertical-center .et_pb_code_inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+	.page-id-31027 .et_pb_specialty_column .et_pb_column_1_3.et-last-child {
+		width: 25% !important;
+	}
+
+
+	.page-id-31027 .et_pb_specialty_column .et_pb_column_1_3 {
+		width: 75% !important;
+		margin-right: 0 !important;
+	}
+
+	.page-id-31027 .et_pb_specialty_column .et_pb_column_1_3.et-last-child .et_pb_module {
+		text-align: center;
+	}
+}
